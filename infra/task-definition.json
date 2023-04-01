@@ -1,7 +1,7 @@
 {
     "containerDefinitions": [
         {
-            "name": "hackaton-app",
+            "name": "fiap-hackaton-back-app",
             "image": "IMAGE",
             "cpu": 1024,
             "memory": 2048,
@@ -19,14 +19,14 @@
                 "logDriver": "awslogs",
                 "options": {
                     "awslogs-create-group": "true",
-                    "awslogs-group": "hackaton",
+                    "awslogs-group": "fiap-hackaton-back",
                     "awslogs-region": "us-east-1",
                     "awslogs-stream-prefix": "ecs"
                 }
             }
         }
     ],
-    "family": "hackaton-app",
+    "family": "fiap-hackaton-back-app",
     "taskRoleArn": "arn:aws:iam::246628379447:role/ecs-task-role",
     "executionRoleArn": "arn:aws:iam::246628379447:role/ecs-task-execution-role",
     "networkMode": "awsvpc",
